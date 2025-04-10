@@ -1,0 +1,23 @@
+.mainheader {
+  transition: transform 0.79s ease-in-out;
+  /* Smooth transition for movement */
+}
+
+.moveright {
+  transform: translateX(40px);
+  /* Move header to the right by 300px */
+}
+
+
+@media (max-width: 768px) {
+  .mainheader1 {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    font-weight: 700;
+  }
+
+  .moveright {
+    transform: translateX(20px);
+    /* Move header to the right by 300px */
+  }
+}

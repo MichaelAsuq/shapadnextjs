@@ -1,0 +1,74 @@
+.contactheader {
+    font-size: 5rem;
+    color: white;
+    font-family: 'lato';
+    font-weight: 700;
+    line-height: 6rem;
+}
+
+.contact-t {
+    font-size: 32px;
+    line-height: 33px;
+
+}
+
+.Form {
+    margin-left: 11rem;
+}
+
+.btn2 {
+    padding: 15px 25px;
+    background-color: transparent;
+    color: white;
+    font-family: 'lato';
+    border: 2px solid white;
+    font-weight: 700;
+    font-size: 24px;
+    transition: background-color 0.5s ease;
+    border-radius: 8px;
+}
+
+.btn2:hover {
+    padding: 15px 25px;
+    background-color: white;
+    color: black;
+    font-family: 'lato';
+    border: 2px solid white;
+    font-weight: 700;
+    font-size: 24px;
+
+
+}
+
+@media (max-width: 768px) {
+    .contactheader {
+        font-size: 2.2rem;
+        color: white;
+        font-family: 'lato';
+        font-weight: 700;
+        line-height: 2.7rem;
+    }
+
+    .contactt {
+        font-size: 24px;
+        line-height: 20px;
+
+    }
+
+    .Form {
+        margin-left: 0;
+    }
+
+    .btn2 {
+        padding: 15px 25px;
+        background-color: transparent;
+        color: white;
+        font-family: 'lato';
+        border: 2px solid white;
+        font-weight: 700;
+        font-size: 18px;
+        transition: background-color 1s ease;
+        border-radius: 8px;
+    }
+
+}

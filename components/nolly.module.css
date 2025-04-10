@@ -1,0 +1,29 @@
+.result {
+    position: relative;
+    top: 20rem;
+}
+
+.header {
+    font-family: 'lato';
+    font-size: 32px;
+}
+
+.para {
+    font-size: 20px;
+    font-family: 'lato';
+    font-weight: 400;
+}
+
+@media(max-width:768px) {
+    .result {
+        position: relative;
+        top: 0;
+    }
+
+    .para {
+        font-size: 18px;
+        font-family: 'lato';
+        font-weight: 300;
+    }
+
+}

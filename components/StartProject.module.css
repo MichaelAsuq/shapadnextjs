@@ -1,0 +1,55 @@
+.mainheader3 {
+    font-size: 4rem;
+}
+
+.btn1 {
+    border: 2px solid white;
+    color: white;
+    background-color: black;
+    padding: 15px 30px;
+    font-size: 1.5rem;
+    font-family: 'lato';
+    font-weight: 400;
+    border-radius: 8px;
+    display: flex;
+    transition: background-color 0.3s ease;
+    align-items: center;
+}
+
+.icon {
+    font-size: 1.7rem;
+    margin-left: 0.9rem;
+    font-weight: 400;
+}
+
+.btn1:hover {
+    background-color: white;
+    color: black;
+}
+
+@media (max-width: 768px) {
+    .mainheader3 {
+        font-size: 2rem;
+    }
+
+    .btn1 {
+        border: 2px solid white;
+        color: white;
+        background-color: black;
+        padding: 10px 20px;
+        font-size: 1.2rem;
+        font-family: 'lato';
+        font-weight: 400;
+        border-radius: 8px;
+        display: flex;
+        transition: background-color 0.3s ease;
+        align-items: center;
+    }
+
+    .icon {
+        font-size: 1.5rem;
+        margin-left: 0.9rem;
+        font-weight: 400;
+        align-items: center;
+    }
+}

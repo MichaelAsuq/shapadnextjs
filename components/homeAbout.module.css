@@ -1,0 +1,91 @@
+.homeAboutHeader {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: white;
+    line-height: 2.8rem;
+    font-family: 'lato';
+}
+
+.homeAboutText {
+    font-size: 1.2rem;
+    line-height: 2rem;
+    margin-top: 2rem;
+    font-weight: 300;
+    font-family: 'lato';
+    color: white;
+}
+
+.learnMore {
+    font-size: 1.1rem;
+    color: white;
+    ;
+    transition: transform 0.5s ease;
+    margin-top: 15px;
+    border: none;
+    background: none;
+}
+
+.arrowIcon {
+    opacity: 0;
+    transform: translateX(-5px);
+    transition: all 0.3s ease;
+    position: relative;
+    top: 3px;
+}
+
+.learnMore:hover {
+    color: white;
+    transform: translateY(-5px);
+    cursor: pointer;
+}
+
+.learnMore:hover .arrowIcon {
+    color: white;
+    opacity: 1;
+    transform: translateX(0), translateY(-5px);
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .homeAboutHeader {
+        font-size: 2rem;
+        font-weight: 500;
+
+        line-height: 2.2rem;
+        font-family: 'poppins';
+    }
+
+    .homeAboutText {
+        font-size: 1rem;
+        line-height: 2rem;
+        margin-top: 2rem;
+
+        font-family: 'poppins';
+
+    }
+
+    .learnMore {
+        font-size: 1.3rem;
+        color: white;
+        ;
+        transition: transform 0.5s ease;
+        margin-top: 15px;
+        border: none;
+        background: none;
+    }
+
+    .learnMore:hover {
+        color: white;
+        transform: translateY(-10px);
+        cursor: pointer;
+    }
+
+    .learnMore:hover .arrowIcon {
+        color: white;
+        opacity: 1;
+        transform: translateX(2);
+        cursor: pointer;
+    }
+
+
+}

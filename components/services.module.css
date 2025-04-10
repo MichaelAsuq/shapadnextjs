@@ -1,0 +1,141 @@
+.solutionsSection {
+    padding-top: 8rem;
+}
+
+.services {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: black;
+    line-height: 2.8rem;
+    font-family: 'lato';
+    margin-bottom: 0;
+}
+
+.servicesText {
+    font-size: 1.2rem;
+    line-height: 2rem;
+    margin-top: 2rem;
+    font-weight: 300;
+    font-family: 'lato';
+    color: black;
+}
+
+.imgcontainer {
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s ease;
+    margin-bottom: 20px;
+}
+
+.imgcontainer:hover {
+    transform: translateY(-10px);
+}
+
+.imgfuild {
+    max-width: 100%;
+    display: block;
+    transition: transform 2s ease;
+}
+
+.imgcontainer:hover .imgfuild {
+    transform: scale(1.10);
+}
+
+.colorOverlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    transition: height 0.5s ease;
+    z-index: 1;
+}
+
+.imgcontainer:hover .colorOverlay {
+    height: 100%;
+}
+
+.imageText {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    color: white;
+    padding: 15px;
+    transition: height 0.5s ease;
+    height: 90px;
+    /* Increased to accommodate icon */
+    overflow: hidden;
+    z-index: 2;
+    font-weight: 500;
+}
+
+.imgcontainer:hover .imageText {
+    height: 150px;
+    /* Increased for hover state with icon */
+}
+
+.iconContainer {
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+
+}
+
+.imgcontainer:hover .iconContainer {
+    transform: translateY(-5px);
+}
+
+.serviceIcon {
+    filter: brightness(0) invert(1);
+
+    /* Makes the icon white */
+}
+
+.mainText {
+    margin: 0;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.hoverText {
+    margin-top: 10px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    z-index: 3;
+    position: relative;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.imgcontainer:hover .hoverText {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+    .services {
+        font-size: 2.2rem;
+        font-weight: 600;
+        color: black;
+        line-height: 2.4rem;
+        font-family: 'lato';
+        margin-bottom: 0;
+    }
+
+    .servicesText {
+        font-size: 1.2rem;
+        line-height: 2rem;
+        margin-top: 2rem;
+        font-weight: 300;
+        font-family: 'lato';
+        color: black;
+    }
+
+    .iconContainer {
+        margin-bottom: 5px;
+        /* Smaller margin on mobile */
+    }
+}

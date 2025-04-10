@@ -1,0 +1,55 @@
+.vidcontainer {
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+    color: white;
+    padding: 10px;
+    z-index: 1;
+    font-family: 'lato';
+
+}
+
+.overlayt {
+    font-size: 36px;
+}
+
+.btn3 {
+    background-color: transparent;
+    font-size: 1rem;
+    color: white;
+    border: 2px solid white;
+    border-radius: 8px;
+    padding: 10px 25px;
+    font-family: 'lato';
+    font-weight: 500;
+    transition: background-color 0.5s ease;
+}
+
+.btn3:hover {
+    background-color: white;
+    color: black;
+}
+
+@media(max-width:768px) {
+    .btn3 {
+        background-color: transparent;
+        font-size: 16px;
+        color: white;
+        border: 1px solid white;
+        border-radius: 8px;
+        padding: 8px 18px;
+        font-family: 'lato';
+        font-weight: 700;
+        transition: background-color 0.5s ease;
+    }
+
+    .overlayt {
+        font-size: 20px;
+    }
+
+
+}

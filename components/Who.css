@@ -1,0 +1,14 @@
+.ptext {
+    font-size: 24px;
+    font-family: 'lato';
+    font-weight: 400;
+    color: black;
+}
+
+@media(max-width:768px) {
+    .ptext {
+        font-size: 18px;
+        font-family: 'lato';
+        font-weight: 400;
+    }
+}

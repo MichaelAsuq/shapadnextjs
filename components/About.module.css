@@ -1,0 +1,48 @@
+.wrapper {
+    padding-top: 5rem;
+}
+
+.aboutHeader {
+    font-size: 3rem;
+    line-height: 3.5rem;
+    font-weight: 500;
+    font-family: 'lato';
+    color: white;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.aboutText {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 300;
+    font-family: 'lato';
+    color: white;
+    padding-bottom: 8rem;
+    margin-top: 4rem;
+
+}
+
+
+@media(max-width:768px) {
+    .aboutHeader {
+        font-size: 2rem;
+        line-height: 2.5rem;
+        font-weight: 500;
+        font-family: 'lato';
+
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+
+    .aboutText {
+        font-size: 1.5rem;
+        line-height: 2rem;
+        font-weight: 300;
+        font-family: 'lato';
+        padding-bottom: 4rem;
+        margin-top: 4rem;
+
+    }
+
+}
