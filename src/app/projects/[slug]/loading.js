@@ -1,11 +1,11 @@
 // app/projects/[slug]/loading.js
 export default function Loading() {
     return (
-        <div className="container text-center py-5">
-            <div className="spinner-border" role="status">
+        <div className="d-flex justify-content-center align-items-center min-vh-100">
+            <div className="spinner-border spinner-border-lg text-black me-2" role="status">
                 <span className="visually-hidden">Loading...</span>
             </div>
-            <p className="mt-3">Loading project details...</p>
+            <p className="mb-0  fs-3 ">Loading projects...</p>
         </div>
     );
 }
