@@ -56,69 +56,222 @@ export default function ProjectDetail({ initialProject, slug }) {
 
 
     return (
-         <section className='bg-black'>
+             <>
+            <section className='bg-black'>
                 <div className={styles.banner}>
                     <Container className="text-center text-white py-5">
                         <h1 className="display-4 fw-bold"></h1>
                     </Container>
                 </div>
-                <Container>
+                <Container className="py-3">
+                    <div className="row justify-content-center" >
+                        <div className="col-md-10">
+                            <h1 style={{ fontSize: '2.5rem', fontFamily: 'lato', color: 'white', lineHeight: '3rem', fontWeight: '600', marginBottom: '10px' }}> {project.product_title}</h1>
+                            <p style={{ fontWeight: '500', fontSize: '16px', color: 'white' }}>{project.date}</p>
 
-                    <Container className="text-center my-5">
-                        <h1 className="display-4 text-white fw-bold">Our Projects</h1>
-                        <p className="lead text-white mt-3">
-                            Explore our collection of innovative projects, showcasing creativity,
-                            functionality, and excellence. Click on any project to learn more!
-                        </p>
-                    </Container>
-
-                    {loading && (
-                        <div className="d-flex justify-content-center align-items-center min-vh-100">
-                            <div className="spinner-border text-white me-2" role="status">
-                                <span className="visually-hidden">Loading...</span>
+                            <p style={{ fontWeight: '500', fontSize: '16px', color: 'grey', marginTop: '2rem' }}>Overview</p>
+                            <div className="project-details">
+                                {project.description && (
+                                    <div className="mb-4">
+                                        <p style={{ fontSize: '1.2rem', fontFamily: 'lato', color: 'white', lineHeight: '1.8rem', fontWeight: '300', }} >{project.description}</p>
+                                    </div>
+                                )}
                             </div>
-                            <p className="mb-0  fs-3 ">Loading projects...</p>
+                            {project.videos_url1 && (
+                                <div className="mb-4">
+                                    <video ref={videoRef} autoPlay muted loop playsInline onEnded={handleVideoEnd} style={{ width: '100%', height: '100%', }}>
+                                        <source src={project.videos_url1} type="video/mp4" />
+                                        Your browser does not support the video tag.
+                                    </video>
+                                </div>
+                            )}
+
+                            {project.main_image && (
+                                <div className='mb-4' style={{ position: 'relative', width: '100%', height: '500px' }}>
+                                    <Image
+                                        src={project.main_image}
+                                        alt={project.product_title}
+                                        layout="fill"
+                                        objectFit="cover"
+                                        className="rounded"
+                                    />
+                                </div>
+                            )}
+                            {project.images_url1 && (
+                                <div className='mb-4' style={{ position: 'relative', width: '100%', height: '500px' }}>
+                                    <Image
+                                        src={project.images_url1}
+                                        alt={project.product_title}
+                                        layout="fill"
+                                        objectFit="cover"
+                                        className="rounded"
+                                    />
+                                </div>
+                            )}
+                            {project.videos_url2 && (
+                                <div className="mb-4">
+                                    <video ref={videoRef} autoPlay muted loop playsInline onEnded={handleVideoEnd} style={{ width: '100%', height: '100%', }}>
+                                        <source src={project.videos_url2} type="video/mp4" />
+                                        Your browser does not support the video tag.
+                                    </video>
+                                </div>
+                            )}
+
+                            <div className='row'>
+                                <div className='col-md-6 '>
+                                    {project.images_url1 && (
+                                        <div className='mb-4' style={{ position: 'relative', width: '100%', height: '500px' }}>
+                                            <Image
+                                                src={project.images_url1}
+                                                alt={project.product_title}
+                                                layout="fill"
+                                                objectFit="cover"
+                                                className="rounded"
+                                            />
+                                        </div>
+                                    )}
+                                </div>
+
+                                <div className='col-md-6'>
+                                    {project.images_url2 && (
+                                        <div className='mb-4' style={{ position: 'relative', width: '100%', height: '500px' }}>
+                                            <Image
+                                                src={project.images_url2}
+                                                alt={project.product_title}
+                                                layout="fill"
+                                                objectFit="cover"
+                                                className="rounded"
+                                            />
+                                        </div>
+                                    )}
+                                </div>
+                            </div>
+                            {project.images_url10 && (
+                                <div className='mb-4' style={{ position: 'relative', width: '100%', height: '500px' }}>
+                                    <Image
+                                        src={project.images_url10}
+                                        alt={project.product_title}
+                                        layout="fill"
+                                        objectFit="cover"
+                                        className="rounded"
+                                    />
+                                </div>
+                            )}
+                            {project.videos_url3 && (
+                                <div className="mb-4">
+                                    <video ref={videoRef} autoPlay muted loop playsInline onEnded={handleVideoEnd} style={{ width: '100%', height: '100%', }}>
+                                        <source src={project.videos_url3} type="video/mp4" />
+                                        Your browser does not support the video tag.
+                                    </video>
+                                </div>
+                            )}
+                            <div className='row'>
+                                <div className='col-md-6 '>
+                                    {project.images_url3 && (
+                                        <div className='mb-4' style={{ position: 'relative', width: '100%', height: '500px' }}>
+                                            <Image
+                                                src={project.images_url3}
+                                                alt={project.product_title}
+                                                layout="fill"
+                                                objectFit="cover"
+                                                className="rounded"
+                                            />
+                                        </div>
+                                    )}
+                                </div>
+
+                                <div className='col-md-6'>
+                                    {project.images_url4 && (
+                                        <div className='mb-4' style={{ position: 'relative', width: '100%', height: '500px' }}>
+                                            <Image
+                                                src={project.images_url4}
+                                                alt={project.product_title}
+                                                layout="fill"
+                                                objectFit="cover"
+                                                className="rounded"
+                                            />
+                                        </div>
+                                    )}
+                                </div>
+                            </div>
+
+                            {project.images_url9 && (
+                                <div className='mb-4' style={{ position: 'relative', width: '100%', height: '500px' }}>
+                                    <Image
+                                        src={project.images_url9}
+                                        alt={project.product_title}
+                                        layout="fill"
+                                        objectFit="cover"
+                                        className="rounded"
+                                    />
+                                </div>
+                            )}
+
+                            <div className='row'>
+                                <div className='col-md-6 '>
+                                    {project.images_url5 && (
+                                        <div className='mb-4' style={{ position: 'relative', width: '100%', height: '500px' }}>
+                                            <Image
+                                                src={project.images_url5}
+                                                alt={project.product_title}
+                                                layout="fill"
+                                                objectFit="cover"
+                                                className="rounded"
+                                            />
+                                        </div>
+                                    )}
+                                </div>
+
+                                <div className='col-md-6'>
+                                    {project.images_url6 && (
+                                        <div className='mb-4' style={{ position: 'relative', width: '100%', height: '500px' }}>
+                                            <Image
+                                                src={project.images_url6}
+                                                alt={project.product_title}
+                                                layout="fill"
+                                                objectFit="cover"
+                                                className="rounded"
+                                            />
+                                        </div>
+                                    )}
+                                </div>
+                            </div>
+
+                            <div className='row'>
+                                <div className='col-md-6 '>
+                                    {project.images_url7 && (
+                                        <div className='mb-4' style={{ position: 'relative', width: '100%', height: '500px' }}>
+                                            <Image
+                                                src={project.images_url7}
+                                                alt={project.product_title}
+                                                layout="fill"
+                                                objectFit="cover"
+                                                className="rounded"
+                                            />
+                                        </div>
+                                    )}
+                                </div>
+
+                                <div className='col-md-6'>
+                                    {project.images_url8 && (
+                                        <div className='mb-4' style={{ position: 'relative', width: '100%', height: '500px' }}>
+                                            <Image
+                                                src={project.images_url8}
+                                                alt={project.product_title}
+                                                layout="fill"
+                                                objectFit="cover"
+                                                className="rounded"
+                                            />
+                                        </div>
+                                    )}
+                                </div>
+                            </div>
+
                         </div>
-                    )}
-
-                    {error && (
-                        <div className="alert alert-danger ">
-                            <strong>Error:</strong> {error}
-                            <p>Check your browser console for more details.</p>
-                        </div>
-                    )}
-
-                    {!loading && !error && (
-                        <div>
-
-                            <Row >
-                                {items.map((item, index) => (
-                                    <Col key={index} md={4} className="mb-4">
-                                        <Link className='text-decoration-none text-black' href={`/projects/${generateSlug(item.product_title)}`}>
-                                            <div className={styles.projectContainer}>
-                                                {item.main_image && (
-                                                    <Image
-                                                        src={item.main_image}
-                                                        alt="Project Image"
-                                                        width={450}
-                                                        height={450}
-                                                        className={styles.projectImg}
-                                                        style={{ objectFit: 'cover' }}
-                                                    />
-                                                )}
-                                                <div className="mt-5">
-                                                    <h3 className="card-title text-white">{item.product_title}</h3>
-                                                </div>
-                                            </div>
-                                        </Link>
-                                    </Col>
-                                ))}
-                            </Row>
-                        </div>
-                    )}
-
+                    </div>
                 </Container>
             </section>
+        </>
     );
 
 }
