@@ -263,7 +263,7 @@
     .customNavbar :global(.navbar-nav .nav-link),
     .customNavbar :global(.navbar-nav a) {
         padding: 10px 0;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         color: black !important;
         /* Force black text in mobile menu */
         opacity: 0;
