@@ -48,7 +48,7 @@ const Bar = () => {
         <Navbar.Brand href="#home" className={`${styles.navbarBrand} ${scrolled ? 'text-white' : 'text-black'}`}>
           <div className={styles.logoContainer}>
             <Image
-              src='/Images/shapadlogowhite.png'
+              src={scrolled ? '/Images/shapadlogoblack.png' : '/Images/shapadlogowhite.png'}
               alt='shapad-logo'
               width={100}
               height={100}
