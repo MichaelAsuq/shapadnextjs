@@ -57,7 +57,7 @@ const Bar = () => {
           </div>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav">
-          <i className="bi bi-list" style={{ color: scrolled ? 'black' : 'white', fontSize: '1.5rem' }}></i>
+          <i className="bi bi-list" style={{ color: scrolled ? 'black' : 'white', fontSize: '1.5rem', border: 'none', outline: 'none' }}></i>
         </Navbar.Toggle>
         <Navbar.Collapse id="basic-navbar-nav" className='right-aligned-navbar'>
           <div className={`${styles.closeButtonContainer} d-md-none d-block`}>
