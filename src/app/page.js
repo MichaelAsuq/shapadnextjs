@@ -4,7 +4,7 @@ import Link from 'next/link'
 import React, { useEffect, useState } from 'react';
 import Container from 'react-bootstrap/Container';
 import Col from 'react-bootstrap/Col';
-import Vid from '../../components/Video';
+
 import styles from '../../components/Home.module.css'
 import Startproject from '../../components/StartProject';
 import Footer from '../../components/Footer'
