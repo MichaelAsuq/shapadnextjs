@@ -58,7 +58,7 @@ export default function ProjectDetail({ initialProject, slug }) {
     return (
              <>
             <section className='bg-black'>
-                <div className={styles.banner}>
+                <div>
                     <Container className="text-center text-white py-5">
                         <h1 className="display-4 fw-bold"></h1>
                     </Container>
